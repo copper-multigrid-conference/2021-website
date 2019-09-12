@@ -1,0 +1,170 @@
+- year:
+  title:
+  url:
+  journal:
+  journal-abbv:
+  journal-url:
+
+- year: 2017
+  title: 18th Copper Mountain Conference On Multigrid Methods
+  url: http://grandmaster.colorado.edu/~copper/2017/
+
+- year: 2016
+  title: 14th Copper Mountain Conference On Iterative Methods
+  url: http://grandmaster.colorado.edu/~copper/2016/
+
+- year: 2015
+  title: 17th Copper Mountain Conference On Multigrid Methods
+  url: http://grandmaster.colorado.edu/~copper/2015/
+
+- year: 2014
+  title: 13th Copper Mountain Conference On Iterative Methods
+  url: http://grandmaster.colorado.edu/~copper/2014/
+  journal: SIAM Journal on Scientific Computing
+  journal-abbv: SISC
+  journal-url: http://epubs.siam.org/toc/sjoce3/37/5
+
+- year: 2013
+  title: 16th Copper Mountain Conference On Multigrid Methods
+  url: http://grandmaster.colorado.edu/~copper/2013/
+  journal: Numerical Linear Algebra with Applications
+  journal-abbv: NLAA
+  journal-url: http://onlinelibrary.wiley.com/doi/10.1002/nla.v21.2/issuetoc
+
+- year: 2012
+  title: 12th Copper Mountain Conference On Iterative Methods
+  url: http://grandmaster.colorado.edu/~copper/2012/
+  journal: SIAM Journal on Scientific Computing
+  journal-abbv: SISC
+  journal-url: http://epubs.siam.org/toc/sjoce3/35/5
+
+- year: 2011
+  title: 15th Copper Mountain Conference On Multigrid Methods
+  url: http://grandmaster.colorado.edu/~copper/2011/
+  journal: Numerical Linear Algebra with Applications
+  journal-abbv: NLAA
+  journal-url: http://onlinelibrary.wiley.com/doi/10.1002/nla.v19.2/issuetoc
+
+- year: 2010
+  title: 11th Copper Mountain Conference On Iterative Methods
+  url: http://grandmaster.colorado.edu/~copper/2010/
+  journal: SIAM Journal on Scientific Computing
+  journal-abbv: SISC
+  journal-url: http://epubs.siam.org/toc/sjoce3/33/5
+
+- year: 2009
+  title: 14th Copper Mountain Conference On Multigrid Methods
+  url: http://grandmaster.colorado.edu/~copper/2009/
+  journal: Numerical Linear Algebra with Applications
+  journal-abbv: NLAA
+  journal-url: http://onlinelibrary.wiley.com/doi/10.1002/nla.v17:2/3/issuetoc
+
+- year: 2008
+  title: 10th Copper Mountain Conference On Iterative Methods
+  url: http://grandmaster.colorado.edu/~copper/2008/
+  journal: SIAM Journal on Scientific Computing
+  journal-abbv: SISC
+  journal-url: http://epubs.siam.org/toc/sjoce3/32/1
+
+- year: 2007
+  title: 13th Copper Mountain Conference On Multigrid Methods
+  url: http://grandmaster.colorado.edu/~copper/2007/
+  journal: Numerical Linear Algebra with Applications
+  journal-abbv: NLAA
+  journal-url: http://onlinelibrary.wiley.com/doi/10.1002/nla.v15:2/3/issuetoc
+
+- year: 2006
+  title: 9th Copper Mountain Conference On Iterative Methods
+  url: http://grandmaster.colorado.edu/~copper/2006/
+  journal: SIAM Journal on Scientific Computing
+  journal-abbv: SISC
+  journal-url: http://epubs.siam.org/toc/sjoce3/29/5
+
+- year: 2005
+  title: 12th Copper Mountain Conference On Multigrid Methods
+  url: http://grandmaster.colorado.edu/~copper/2005/
+  journal: Numerical Linear Algebra with Applications
+  journal-abbv: NLAA
+  journal-url: http://onlinelibrary.wiley.com/doi/10.1002/nla.v13:2/3/issuetoc
+
+- year: 2004
+  title: 8th Copper Mountain Conference On Iterative Methods
+  url: http://grandmaster.colorado.edu/~copper/2004/
+  journal: SIAM Journal on Scientific Computing
+  journal-abbv: SISC
+  journal-url: http://epubs.siam.org/toc/sjoce3/27/5
+
+- year: 2003
+  title: 11th Copper Mountain Conference On Multigrid Methods
+  url: http://grandmaster.colorado.edu/~copper/2003/
+  journal: Numerical Linear Algebra with Applications
+  journal-abbv: NLAA
+  journal-url: http://onlinelibrary.wiley.com/doi/10.1002/nla.v11:2/3/issuetoc
+
+- year: 2002
+  title: 7th Copper Mountain Conference On Iterative Methods
+  url: http://grandmaster.colorado.edu/~copper/2002/
+  journal: SIAM Journal on Scientific Computing
+  journal-abbv: SISC
+  journal-url: http://epubs.siam.org/toc/sjoce3/25/2
+
+- year: 2001
+  title: 10th Copper Mountain Conference On Multigrid Methods
+  url: http://grandmaster.colorado.edu/~copper/2001/
+  journal: Electronic Transactions on Numerical Analysis
+  journal-abbv: ETNA
+  journal-url: http://etna.mcs.kent.edu/volumes/2001-2010/vol15/
+
+- year: 2000
+  title: 6th Copper Mountain Conference On Iterative Methods
+  url: http://grandmaster.colorado.edu/~copper/2000/
+  journal: SIAM Journal on Scientific Computing
+  journal-abbv: SISC
+  journal-url: http://epubs.siam.org/toc/sjoce3/23/2
+
+- year: 1999
+  title: 9th Copper Mountain Conference On Multigrid Methods
+  url: http://grandmaster.colorado.edu/~copper/1999/
+  journal: Electronic Transactions on Numerical Analysis
+  journal-abbv: ETNA
+  journal-url: http://etna.mcs.kent.edu/volumes/1993-2000/vol10/
+
+- year: 1998
+  title: 5th Copper Mountain Conference On Iterative Methods
+  url: http://grandmaster.colorado.edu/~copper/1998/
+  journal: SIAM Journal on Scientific Computing
+  journal-abbv: SISC
+  journal-url: http://epubs.siam.org/toc/sjoce3/21/5
+
+- year: 1997
+  title: 8th Copper Mountain Conference On Multigrid Methods
+  journal: Electronic Transactions on Numerical Analysis
+  journal-abbv: ETNA
+  journal-url: http://etna.mcs.kent.edu/volumes/1993-2000/vol6/
+
+- year: 1996
+  title: 4th Copper Mountain Conference On Iterative Methods
+  journal: SIAM Journal on Scientific Computing
+  journal-abbv: SISC
+  journal-url: http://epubs.siam.org/toc/sjoce3/19/1
+
+- year: 1995
+  title: 7th Copper Mountain Conference On Multigrid Methods
+
+- year: 1994
+  title: 3rd Copper Mountain Conference On Iterative Methods
+  journal: SIAM Journal on Scientific Computing
+  journal-abbv: SISC
+  journal-url: http://epubs.siam.org/toc/sjoce3/17/1
+
+- year: 1992
+  title: 2nd Copper Mountain Conference on Iterative Methods in Numerical Linear Algebra
+  journal: SIAM Journal on Scientific Computing
+  journal-abbv: SISC
+  journal-url: http://epubs.siam.org/toc/sjoce3/15/2
+
+- year: 1990
+  title: 1st Copper Mountain Conference on Iterative Methods
+  journal: SIAM Journal on Scientific and Statistical Computing
+  journal-abbv: SISC
+  journal-url: http://epubs.siam.org/toc/sijcd4/13/1

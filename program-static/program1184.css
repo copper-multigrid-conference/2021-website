@@ -1,0 +1,252 @@
+/* EasyChair smart program style sheets
+ * (c) 2013-2015 Cool Press Ltd
+ */
+
+/* main top-level menu, contains the most general items (program, site map etc.) */
+
+body, html  {
+  margin:0pt 0pt 0pt 0pt;
+  padding:0px;
+  min-width:800px;
+}
+
+.page_table {
+  height:100%;
+  width:100%;
+  border:0px;
+}
+.left_td_column {
+  width:1%;
+  vertical-align: top;
+  text-align: center;
+  padding:20pt 20px 20pt 20px;
+}
+.central_td_column {
+  width:99%;
+  vertical-align: top;
+  padding-top:3pt;
+  background:#fff;
+}
+.right_td_column {
+  width:1%;
+  vertical-align: top;
+  text-align: center;
+  padding:10pt 15px 20pt 15px;
+}
+
+.left_spacer{
+  width: 150px;
+}
+.right_spacer{
+  width: 150px;
+}
+
+.divsearch {
+  float:right;
+  width: 140px;
+  height:14px;
+  background-color:#fff;
+  margin-top:10px;
+  margin-left:20pt;
+  margin-right:20pt;
+  font-size:12pt;
+  line-height: 14px;
+}
+
+.conf_search {
+  width: 140px;
+  height:14px;
+  color:#666;
+  background-color:#fff;
+  font-size:11pt;
+  font-family:verdana, sans-serif;
+  padding:2px 3pt 4px 3pt;
+  border:solid 1px #aaa;
+  line-height: 14px;
+}
+
+#pagetitle {
+  color:#555;
+  font-size:13pt;
+  font-family:verdana, sans-serif;
+  font-weight : normal;
+  padding:10pt 0pt 6pt 0pt;
+  border-bottom:solid 1px #999;
+} 
+
+#main_menu {
+}
+#main_menu a:visited {
+  color:#f6f6f6;
+}
+#main_menu a:hover {
+  background-color:#222222;
+}
+#main_menu a {
+  color:#f6f6f6;
+  text-decoration:none;
+  background-color:#aaa;
+  font-size:11pt;
+  margin-right:2px;
+  font-family:verdana, sans-serif;
+  padding:3pt 5pt 3pt 5pt;
+  cursor: pointer;
+  line-height:1.75;
+}
+
+/* selected main top-level menu, contains the most general items (program, site map etc.) */
+#main_menu a.selected {
+  color:#fff;
+  text-decoration:none;
+  background-color:#dd0000;
+  font-size:11pt;
+  margin-right:2px;
+  font-family:verdana, sans-serif;
+  padding:3pt 5pt 3pt 5pt;
+  cursor: pointer;
+  line-height:1.75;
+}
+#main_menu a.selected:visited { color:#fff; }
+#main_menu a.selected:link:hover { background-color:#222; }
+#main_menu a.selected:visited:hover { background-color:#222; }
+
+/* second-level menu, for multi-conference programs contains conference aliases */
+#menu2 {
+  margin-top:7pt;
+  margin-left:0pt;
+  margin-right:0pt;
+  border-top: solid 1px #999;
+  padding: 4pt 0pt 4pt 0pt; 
+}
+#menu2 a:visited {
+  color:#888888;
+}
+#menu2 a:hover {
+  background-color:#222222;
+  color: #f6f6f6
+}
+#menu2 a {
+  color:#888888;
+  text-decoration:none;
+  font-size:11pt;
+  white-space:nowrap;
+  margin-right:2pt;
+  font-family:verdana, sans-serif;
+  padding:1pt 2pt 1pt 2pt;
+  cursor: pointer;
+}
+#menu2 .separator {
+  padding: 0pt 4pt 0pt 4pt;
+}
+
+/* selected main 2-level menu */
+#menu2 a.selected {
+  color:#fff;
+  text-decoration:none;
+  font-size:11pt;
+  white-space:nowrap;
+  margin-right:0pt;
+  font-family:verdana, sans-serif;
+  padding:0pt 4pt 1pt 4pt;
+  cursor: pointer;
+  background-color:#dd0000;
+}
+#menu2 a.selected:visited { color:#fff; }
+#menu2 a.selected:link:hover { background-color:#222; }
+#menu2 a.selected:visited:hover { background-color:#222; }
+
+/* third-level menu, appears on some pages */
+#menu3 {
+  margin-top:0pt;
+  margin-left:0pt;
+  margin-right:0pt;
+  border-top:solid 1px #999;
+  padding-top:7pt;
+}
+#menu3 a:visited {
+  color:#888888;
+}
+#menu3 a:hover {
+  background-color:#222222;
+  color: #f6f6f6
+}
+#menu3 a {
+  color:#888888;
+  text-decoration:none;
+  font-size:11pt;
+  white-space:nowrap;
+  margin-right:2pt;
+  font-family:verdana, sans-serif;
+  padding:1pt 0pt 2pt 0pt;
+  cursor: pointer;
+}
+#menu3 .separator {
+  padding: 0pt 4pt 0pt 4pt;
+}
+
+/* selected main 3-level menu */
+#menu3 a.selected {
+  color:#fff;
+  text-decoration:none;
+  font-size:11pt;
+  white-space:nowrap;
+  margin-right:0pt;
+  font-family:verdana, sans-serif;
+  padding:2pt 4pt 2pt 4pt;
+  cursor: pointer;
+  background-color:#dd0000;
+}
+#menu3 a.selected:visited { color:#fff; }
+#menu3 a.selected:link:hover { background-color:#222; }
+#menu3 a.selected:visited:hover { background-color:#222; }
+
+/* the class of the " | " string used in menus */
+.separator {}
+
+#disclaimer {
+  color: #043f76;
+  font-size:10pt;
+  font-family:verdana, sans-serif;
+  padding:12pt 12pt 12pt 12pt;
+  margin: 16pt 0pt 0pt 0pt;
+  border-top:1px #999 solid;
+  background-color:#efefef;
+  text-align:left;
+  white-space:nowrap;
+}
+
+#disclaimer a:link {
+  color: #006bb6;
+}
+
+#disclaimer a:hover  {
+  color: #ff0000;
+}
+
+#disclaimer .advt {
+  float: right;
+  color:#003580;
+}
+
+#disclaimer .advt a:link {
+  color: #003580;
+}
+
+#disclaimer .advt a:hover  {
+  color: #ffba01;
+}
+
+/* The page title, displayed on the very top of the page. E.g. LPAR 2013: 20th
+ * International Conference ... */
+#title {
+  color:#666;
+  font-size:16pt;
+  font-family:verdana, sans-serif;
+  padding:7pt 0pt 11pt 0pt;
+}
+
+
+.conf8 {
+  color: #000000;
+  background-color: #6495ed;
+}

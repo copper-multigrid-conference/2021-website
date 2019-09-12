@@ -1,0 +1,78 @@
+{% extends "_layout.html" %}
+{% block title %}Registration{% endblock %}
+{% block content %}
+
+  <div class="container">
+    <div class="row">
+      <h4>Conference Registration</h4>
+    </div>
+
+      <div class="mx-auto" style="width: 400px; margin: 50px;">
+              Registration on or before
+              <b>{{deadlines.earlyregistration.date}}</b>:
+
+<table class="table">
+  <tr><td>SIAM Member (early)     </td><td>460</td></tr>
+  <tr><td>non-SIAM Member (early) </td><td>510</td></tr>
+  <tr><td>student                 </td><td>190</td></tr>
+</table>
+
+      </div>
+      <div class="mx-auto" style="width: 400px; margin: 50px;">
+              Registration after
+              <b>{{deadlines.earlyregistration.date}}</b>:
+
+<table class="table">
+     <tr><td>SIAM Member            </td><td> 525</td></tr>
+     <tr><td>non-SIAM Member        </td><td> 575</td></tr>
+     <tr><td>student                </td><td> 190</td></tr>
+</table>
+
+      </div>
+
+      <p>
+      To receive the early, discounted rates you must register on or before
+              <b>{{deadlines.earlyregistration.date}}</b>:
+      </p>
+
+      <p>
+      Registration will take place through EventZilla at the following link:
+      <!--
+        <div class="alert alert-warning" role="alert">
+        Registration information coming soon.
+        </div>
+      -->
+        <div class="text-xs-center">
+          <a role="button" class="btn btn-primary btn-lg" href="{{info.registrationlink}}">Register</a>
+        </div>
+      </p>
+
+      <p>
+      Registration fees include a registration packet (available at the conference registration desk), a reception, continental breakfast at the conference each day, coffee breaks at the conference, and a banquet.  Please indicate your availability for these events at registration checkout.
+      </p>
+
+      <p>
+      No refunds will be given for cancellations on or after {{deadlines.cancellation.date}}.
+      Full refunds less a $100 service charge will be given if
+      notified before {{deadlines.cancellation.date}}.
+      </p>
+
+      <p> Lodging and conference expenses may be awarded, subject to
+      funding.  Student paper winners will have priority.  Students seeking
+      support should email the conference coordinator, Annette Anthony
+      (annetteFanthony@gmail.com) for more information.  </p>
+
+      <p>
+      Attendees requiring visas should refer to <a href="http://sites.nationalacademies.org/PGA/biso/visas/index.htm">http://sites.nationalacademies.org/PGA/biso/visas/index.htm</a> for guidelines on the process.
+      </p>
+
+      <p>
+      For travel to the United States, ESTA approval is required for the Visa Waiver Program (VWP).  Additional information can be found at <a href="http://travel.state.gov/content/visas/english/business.html">http://travel.state.gov/content/visas/english/business.html</a>.
+      </p>
+
+      <p>
+      Additional questions?  Please contact the <a href="people.html">conference chairs</a>.
+      </p>
+
+  </div>
+{% endblock %}

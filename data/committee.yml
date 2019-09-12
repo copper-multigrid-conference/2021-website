@@ -1,0 +1,131 @@
+- name:
+  email:
+  url:
+  affil:
+  role:
+
+- name: Robert D. Falgout
+  email: falgout2@llnl.gov
+  url: http://people.llnl.gov/falgout2
+  affil: Lawrence Livermore National Laboratory, U.S.A.
+  role: Conference Chair
+
+- name: Luke Olson
+  email: lukeo@illinois.edu
+  url: http://www.cs.illinois.edu/homes/lukeo/
+  affil: University of Illinois at Urbana-Champaign, U.S.A.
+  role: Conference Chair, SIAM Representative
+
+- name: James Adler
+  email: James.Adler@tufts.edu
+  url: https://jadler.math.tufts.edu/
+  affil: Tufts University, U.S.A.
+  role: Program Committee
+
+- name: Matthias Bolten
+  email: bolten@uni-wuppertal.de
+  url: https://www.hpc.uni-wuppertal.de/de/hochleistungsrechnen-swt/mitarbeiter/prof-dr-matthias-bolten.html
+  affil: Bergische Universität Wuppertal, Germany
+  role: Program Committee
+
+- name: James Brannick
+  email: brannick@psu.edu
+  url: http://www.personal.psu.edu/jjb23/
+  affil: Pennsylvania State University, U.S.A.
+  role: Program Committee
+
+- name: Susanne Brenner
+  email: brenner@math.lsu.edu
+  url: http://www.math.sc.edu/~fem/brenner.html
+  affil: Louisiana State University, U.S.A.
+  role: Program Committee
+
+- name: Marian Brezina
+  email: marian.brezina@gmail.com
+  url: http://grandmaster.colorado.edu/~mbrezina
+  affil: DigitalGlobe, U.S.A.
+  role: Program Committee
+
+- name: Hans De Sterck
+  email: hdesterck@uwaterloo.ca
+  url: http://www.hansdesterck.net/
+  affil: University of Waterloo
+  role: Program Committee
+
+- name: Craig Douglas
+  email: craig.c.douglas@gmail.com
+  url: http://www.mgnet.org/~douglas/
+  affil: University of Wyoming, U.S.A.
+  role: Program Committee
+
+- name: Van Emden Henson
+  email: vhenson@llnl.gov
+  url: http://www.llnl.gov/casc/people/henson/
+  affil: Lawrence Livermore National Laboratory, U.S.A.
+  role: Program Committee
+
+- name: Kirk Jordan
+  email: kjordan@us.ibm.com
+  url: http://www-3.ibm.com/software/info/university/people/kjordan.html
+  affil: IBM, Watson Research Center
+  role: Program Committee
+
+- name: Tom Manteuffel
+  email: tmanteuf@colorado.edu
+  url: http://grandmaster.colorado.edu/~tmanteuf/
+  affil: University of Colorado, U.S.A.
+  role: Program Committee
+
+- name: Scott MacLachlan
+  email: smaclachlan@mun.ca
+  url: http://www.mun.ca/math/people/ppl-faculty/scottm.php
+  affil: Memorial University of Newfoundland, Canada
+  role: Program Committee
+
+- name: David Moulton
+  email: moulton@lanl.gov
+  url: http://math.lanl.gov/~moulton/
+  affil: Los Alamos National Laboratory, U.S.A.
+  role: Program Committee
+
+- name: Kees Oosterlee
+  email: c.w.oosterlee@math.tudelft.nl
+  url: http://ta.twi.tudelft.nl/mf/users/oosterle/index.html
+  affil: Delft University of Technology, The Netherlands
+  role: Program Committee
+
+- name: Carmen Rodrigo Cardiel
+  email: carmenr@unizar.es
+  url: https://iuma.unizar.es/es/personal/rodrigo-cardiel-carmen
+  affil: Universidad de Zaragoza, Spain
+  role: Program Committee
+
+- name: Ulrich Rüde
+  email: ulrich.ruede@fau.de
+  url: http://www10.informatik.uni-erlangen.de/~ruede/
+  affil: University of Erlangen, Germany
+  role: Program Committee
+
+- name: John Ruge
+  email: jruge@colorado.edu
+  url: http://amath.colorado.edu/faculty/jruge
+  affil: University of Colorado, U.S.A.
+  role: Program Committee
+
+- name: Stefan Vandewalle
+  email: stefan.vandewalle@kuleuven.be
+  url: http://people.cs.kuleuven.be/~stefan.vandewalle/
+  affil: KU Leuven - University of Leuven, Belgium
+  role: Program Committee
+
+- name: Ulrike Yang
+  email: yang11@llnl.gov
+  url: http://people.llnl.gov/yang11
+  affil: Lawrence Livermore National Laboratory, U.S.A.
+  role: Program Committee
+
+- name: Irad Yavneh
+  email: irad@cs.technion.ac.il
+  url: http://www.cs.technion.ac.il/people/irad/
+  affil: Technion, Israel
+  role: Program Committee

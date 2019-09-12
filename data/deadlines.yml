@@ -1,0 +1,42 @@
+abstracts:
+  title: Presentation Abstracts
+  date: TBD
+  url: submit.html
+
+studentpaper:
+  title: Student Competition Paper
+  date: TBD
+  url: student.html
+
+studentabs:
+  title: Student Competition Abstract
+  date: TBD
+  url: student.html
+
+earlyregistration:
+  title: Early Registration
+  date: TBD
+  url: registration.html
+
+registration:
+  title: Registration
+  date: TBD
+  url: registration.html
+
+lodging:
+  title: Lodging
+  date: TBD
+  url: lodging.html
+
+specialissue:
+  title: Journal Special Issue
+  date: TBD
+  url: about.html#specialissue
+
+specialissueopen:
+  title: Journal Special Issue Open
+  date: TBD
+  url: about.html#specialissue
+
+cancellation:
+  date: TBD

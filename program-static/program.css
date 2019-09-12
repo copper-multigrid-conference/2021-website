@@ -1,0 +1,797 @@
+/* EasyChair smart program style sheets
+ * (c) 2013-2017 Cool Press Ltd
+ * (c) 2018 EasyChair Ltd
+ */
+
+/* The page content: everything not including menus */
+#content {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+}
+
+/* The page content: everything not including menus */
+#content a, a:visited  {
+  color: #486894;/*415a80;/*335382;/*2f6991;/*00548f;*/
+}
+
+#content a:hover  {
+  color: #b40db4;
+}
+
+
+/* top-level section headings */
+h1 {
+  color:#555;
+  font-size:14pt;
+  font-family:verdana, sans-serif;
+  font-weight : normal;
+  padding:1pt 0pt 2pt 0pt;
+} 
+
+/* second-level section headings */
+h2 {
+  color:#888888;
+  font-size:13pt;
+  font-family:verdana, sans-serif;
+  font-weight : normal;
+  padding:7pt 0pt 5pt 0pt;
+} 
+
+/* third-level section headings */
+h3 {
+  color:#888888;
+  font-size:12pt;
+  font-family:verdana, sans-serif;
+  font-weight : normal;
+  padding:7pt 0pt 5pt 0pt;
+} 
+
+/* session div, used in programs */
+.session {}
+
+/* sessions that contain no talks, this class will be used in addition to the
+ * session class */
+.notalks {}
+
+/* A session heading is something like "09:00-12:00 Session 1A: Machine Learning" */
+.session .heading {
+  font-size:12pt;
+  background-color: #d8e5e9;/*d0dce0;/*d8e4e9;/*d0dce0;/*a2caee;/*95c4ee;/*d0dce0;*/
+  padding: 4pt 5pt 3pt 5pt;
+  margin: 3pt 0pt 1pt 0pt;
+  color: #555;
+/*  font-weight: bold; */
+}
+
+/* A session heading interval is something like "09:00-12:00", used inside
+ * session headings */
+.session .heading .interval {
+  color: #666;
+  font-weight: bold;
+}
+
+/* A session heading title is something like "Session 1A: Machine Learning",
+  used inside session headings */
+.session .heading .title {
+  margin-left: 16pt;
+}
+
+/* Talk table, used in programs */
+.talks {
+  margin:2pt 0pt 2pt 20pt;
+}
+
+/* Talk table row, used in a talk table */
+.talk {
+  vertical-align: top;
+}
+
+/* Talk authors div in a talk table row */
+.talk .authors {}
+
+/* when "show affiliation" option is chosen */
+.affiliation {
+  color:#666;
+  margin-left: 4pt;
+}
+
+/* Talk title div in a talk table row */
+.talk .title {
+  padding: 1pt 0pt 1pt 0pt;
+  font-weight: bold;
+}
+
+/* font for discussant names, where discussants are used */
+.talk .discussant {
+   color: #486894;/*486894;777*/
+   font-size: 12pt;
+}
+
+/* Used with any person name, e.g. "Andrei Voronkov". The person name can in
+  fact be an "a" element with a link to the person Web site */
+.person { font-style: italic; }
+
+/** session date in the schedule */
+div.date {
+  text-align: center;
+  padding: 5pt 0pt 5pt 0pt;
+  font-size: 12pt;
+  margin: 4pt 0pt 4pt 0pt;
+  background-color: #d4d4d4;
+  color: black;
+  /* font-weight: bold; */
+}
+
+/** talk abstract */
+.abstract {
+  padding: 1pt 0pt 2pt 0pt;
+}
+
+/** Text SPEAKER: <speaker name> */
+.speaker {
+}
+
+/* submission in the detailed list of accepted papers */
+.sub_detailed {
+  border-top: solid #bbb 1px;
+  border-bottom: solid #bbb 1px;
+  padding: 6pt 6pt 0pt 8pt;
+  margin-bottom: 10pt;
+  background:#ededed;
+}
+
+/* submission abstract in the detailed list of accepted papers */
+.sub_abstract_detailed {
+}
+
+/* submission title in the detailed list of accepted papers */
+.sub_title_detailed {
+  font-weight: bold;
+}
+
+/* div with session chairs in a session */
+.session_chair {
+  margin: 2pt 0pt 2pt 5pt;
+}
+
+.chair_names {
+  display: inline-block;
+}
+
+/* The word "Chairs in" Chairs: ...chair names... */
+.chair_word {
+  text-transform: uppercase;
+  padding-right: 5pt;
+  display:inline-block;
+  vertical-align:top;
+}
+
+/* div <Location: room name> in a session */
+.room {
+  margin: 2pt 0pt 2pt 5pt;
+}
+
+/* The word "Location in" Location: <room name> */
+.room_word {
+  text-transform: uppercase;
+  padding-right: 5pt;
+}
+
+/* room name div in session overview pages */
+#content div.room_link { padding-top:3pt;font-size: 10pt; }
+#content div.room_link a { color: #666666; }
+#content div.room_link a:visited { color:#486894; }
+#content div.room_link a:link:hover { color:#b40db4; }
+#content div.room_link a:visited:hover { color:#b40db4; }
+
+/* Coffee and lunch breaks */
+
+.session .coffeebreak {
+  font-size:12pt;
+  background-color: #eeeed9;
+  padding: 3pt 5pt 3pt 5pt;
+  margin: 3pt 0pt 1pt 0pt;
+}
+
+.session .coffeebreak .interval {
+  font-weight: bold;
+  color: #555;
+}
+
+.coffeebreak .title {
+  margin-left: 14pt;
+  background:url("coffee.png") no-repeat; /* add bg image + color */
+  padding-left: 18pt;
+  color: #555;
+}
+
+.session .lunchbreak {
+  font-size:12pt;
+  background-color: #eeeed9;
+  padding: 3pt 5pt 3pt 5pt;
+  margin: 3pt 0pt 1pt 0pt;
+}
+
+.session .lunchbreak .interval {
+  font-weight: bold;
+  color: #555;
+
+}
+
+.lunchbreak .title {
+  height: 24px;
+  margin-left: 14pt;
+  background:url("lunch2.png") no-repeat; /* add bg image + color */
+  padding-left: 16pt;
+  color: #555;
+}
+
+/** link to day-by-session, when first in the series of links */
+.day_by_session {
+  margin-left: 15pt;
+  margin-right: 6pt;
+}
+/** link to day-with-abstracts, when first in the series of links */
+.day_with_abstracts {
+  margin-left: 15pt;
+  margin-right: 14pt;
+}
+/** next link in the series */
+.day_next_link {
+  margin-left: 5pt;
+  margin-right: 9pt;
+}
+
+/** links to the previous/next day, must be 
+  (1) fixed width so that scrolling through pages is smooth
+  (2) fit "previous day" and have enough space on the right to look nice with "next day" next to it
+*/
+.days {
+  display: inline-block;
+  margin-right: 1.5em;
+}
+.previous_day {
+  display: inline-block;
+  width: 6em; /* must be fixed */
+  background-image:url("prev.gif");
+  background-repeat:no-repeat;
+  background-position:left 1px center;
+  padding-left: 23px; /* to fit the image */
+}
+.day_space {
+  width: 0.6em; /* must be fixed */
+  display: inline-block;
+}
+.next_day {
+  display: inline-block;
+  text-align: right;
+  width: 4.2em; /* must be fixed */
+  background-image:url("next.gif");
+  background-repeat:no-repeat;
+  background-position:right 1px center;
+  padding-right: 23px; /* to fit the image */
+}
+.all_days {
+  margin-left: 10pt;
+  display: inline-block;
+  background-image:url("alldays.gif");
+  background-repeat:no-repeat;
+  background-position:right 1px center;
+  padding-right: 23px; /* to fit the image */
+}
+
+/** links to all program days on the all-talks page */
+.program_days {
+  margin-right: 1em;
+  white-space:nowrap
+}
+
+/** any program table containing an overview of a day, e.g. by-session */
+div.overview {
+  padding: 0pt;
+  border: 0pt;
+  margin-left: 10pt;
+  position: relative;
+  vertical-align:middle;
+  font-size: 11pt;
+  background-color:white;
+} 
+
+div.overview .block {
+  position: absolute;
+  border: solid #666666 1px;
+  margin: 1px;
+  padding: 3px;
+  text-align: center;
+  overflow: hidden;
+  vertical-align:middle;
+  word-break:break-all;
+}
+
+div.overview .tblock {
+  position: absolute;
+  border: solid #666666 1px;
+  margin: 1px;
+  padding: 3px;
+  text-align: center;
+  overflow: hidden;
+  vertical-align:middle;
+  font-size: 9pt;
+  word-break:break-all;
+}
+div.overview .tblock:before {
+  content: "";
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+/* to make the content of an element of the class block vertically centered, see
+  http://css-tricks.com/centering-in-the-unknown/ Does not work with IE 7. Commented out since
+  only Safari gets it right: Chrome and Firefox move some block text below the visible area
+  sporadically.
+  */
+div.overview .block:before {
+  content: "";
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+ 
+div.overview .cblock {
+  position: absolute;
+  border: solid #666666 1px;
+  margin: 1px;
+  padding: 3px;
+  text-align: center;
+  overflow: hidden;
+  vertical-align:middle;
+  font-size:12pt;
+  border-radius:10px;
+  word-break:break-all;
+}
+
+/* Global session blocks. They are treated differently because browsers do not screw up on
+  the :before declarations since the width of these blocks is sufficient */
+div.overview .gblock {
+  position: absolute;
+  border: solid #666666 1px;
+  margin: 1px;
+  padding: 3px;
+  text-align: center;
+  overflow: hidden;
+  vertical-align:middle;
+  word-break:break-all;
+}
+
+/* to make the content of an element of the class block vertically centered, see
+  http://css-tricks.com/centering-in-the-unknown/ Does not work with IE 7 */
+div.overview .gblock:before {
+  content: "";
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+/* to make the content of an element of the class block vertically centered, see
+  http://css-tricks.com/centering-in-the-unknown/ Does not work with IE 7 */
+div.overview .cblock:before {
+  content: "";
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+div.overview .inner {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.overview .coffee {
+  font-size:13pt;
+  background-color: #eeeeee;
+}
+
+div.overview .lunch {
+  font-size:13pt;
+  background-color: #eeeeee;
+}
+
+div.overview .vtimeline {
+  position: absolute;
+  background-color: #666666;
+  color: #666666;
+  width:1px;
+  overflow:hidden;
+}
+
+div.overview .htimeline {
+  position: absolute;
+  background-color: #666666;
+  color: #666666;
+  height:1px;
+  overflow:hidden;
+}
+
+div.overview .minutes60 {
+  position: absolute;
+  text-align: right;
+  font-size: 11pt;
+}
+
+div.overview .minutes30 {
+  position: absolute;
+  text-align: right;
+  font-size: 9pt;
+}
+
+/* Indexing */
+
+.index {}
+.index .letter { height:22pt; }
+.index .letter_sel { height:22pt; }
+.index .entry {
+  height:15pt;
+  vertical-align: text-top;
+}
+.index .name {
+  padding-left:25pt;
+}
+.index .paper1 {
+  padding:0pt 0pt 0pt 14pt;
+  background:url("square.gif") no-repeat; /* add bg image */
+  font-style: italic;
+}
+.index .paper2 {
+  margin-left: 10pt;
+  padding:0pt 0pt 0pt 14pt;
+  background:url("square.gif") no-repeat; /* add bg image */
+  font-style: italic;
+}
+.index .paper3 {
+  margin-left: 20pt;
+  padding:0pt 0pt 0pt 14pt;
+  background:url("square.gif") no-repeat; /* add bg image */
+  font-style: italic;
+}
+.index .paper4 {
+  margin-left: 30pt;
+  padding:0pt 0pt 0pt 14pt;
+  background:url("square.gif") no-repeat; /* add bg image */
+  font-style: italic;
+}
+.index .paper5 {
+  margin-left: 40pt;
+  padding:0pt 0pt 0pt 14pt;
+  background:url("square.gif") no-repeat; /* add bg image */
+  font-style: italic;
+}
+.index .paper6 {
+  margin-left: 50pt;
+  padding:0pt 0pt 0pt 14pt;
+  background:url("square.gif") no-repeat; /* add bg image */
+  font-style: italic;
+}
+.index .papers{}
+.index .ptitle .conference {
+  display:inline;
+  font-style: normal;
+}
+.index .ptitle {
+  display:inline;
+}
+
+.index .letter a {
+  color:#000;
+  background-color:#ff0;
+  font-size:12pt;
+  font-family:verdana, sans-serif;
+  padding:2pt 5pt 3pt 5pt;
+  border: solid 1px #000;
+}
+
+.index .letter_sel a {
+  color:#fff;
+  background-color:#f00;
+  font-size:12pt;
+  font-family:verdana, sans-serif;
+  padding:2pt 5pt 3pt 5pt;
+  border: solid 1px #a00;
+  font-weight: bold;
+}
+
+#content .shortcuts {
+  color:#888;
+  font-size:12pt;
+  font-family:verdana, sans-serif;
+  padding:5pt 0pt 5pt 5pt;
+  margin-bottom:10pt;
+}
+
+#content .shortcuts .links a:link { 
+  text-decoration:none;
+  font-size:12pt;
+  font-weight:normal;
+  color:#900;
+  border: solid 1px #aaa;
+  padding:1pt 5pt 2pt 5pt;
+  margin-right:1pt; 
+}
+#content .shortcuts .links a:visited { color:#a00; }
+#content .shortcuts .links a:link:hover { color:red; border: solid 1px #f00;}
+#content .shortcuts .links a:visited:hover { color:red; border: solid 1px #f00;}
+
+/* personal pages, including bio */
+
+.bio {
+  padding: 0pt 0pt 0pt 15pt;
+  color: #666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  border-left:1px #666 solid;
+}
+.bio_img {
+  padding: 4pt 10pt 0pt 0pt;
+}
+.bio_title {
+  color:#444;
+  font-size:14pt;
+  font-family:verdana, sans-serif;
+  font-weight : normal;
+  padding:0pt 0pt 7pt 0pt;
+}
+.bio_honours {
+  color:#666;
+  font-size:12pt;
+  font-family:verdana, sans-serif;
+  font-weight : normal;
+  padding:7pt 0pt 15pt 10pt;
+  max-width: 850pt;
+}
+.bio_interests {
+  color:#555;
+  font-size:12pt;
+  font-family:verdana, sans-serif;
+  font-weight : normal;
+  padding:15pt 0pt 5pt 10pt;
+}
+.bio_interests_cont {
+  padding:0pt 0pt 0pt 10pt;
+}
+.bio_auto {
+  color:#555;
+  font-size:12pt;
+  font-family:verdana, sans-serif;
+  font-weight : normal;
+  padding:15pt 0pt 5pt 10pt;
+}
+.bio_auto {
+  color:#555;
+  font-size:12pt;
+  font-family:verdana, sans-serif;
+  font-weight : normal;
+  padding:15pt 0pt 5pt 10pt;
+}
+.bio_auto_cont {
+  padding:0pt 0pt 0pt 10pt;
+}
+.bio_pages {
+  color:#555;
+  font-size:12pt;
+  font-family:verdana, sans-serif;
+  font-weight : normal;
+  padding:15pt 0pt 5pt 10pt;
+}
+
+.bio_table {
+  border-collapse:collapse;
+  max-width: 850pt;
+  width: 100%;
+  margin:0pt 10pt 0pt 10pt;
+}
+.bio_table td {
+  padding: 4pt 9pt 4pt 9pt;
+  border-right: solid #bcbcbc 1px;
+  border-left: solid #bcbcbc 1px;
+  border-top: solid #bcbcbc 1px;
+}
+
+/* same but with a border */
+.bio_table td.borderl {
+  padding: 2pt 7pt;
+  border-left: solid 1px #cccccc;
+}
+.bio_table td.borderr {
+  padding: 2pt 7pt;
+  border-right: solid 1px #cccccc;
+}
+.bio_table td.borderb {
+  padding: 2pt 7pt;
+  border-left: solid 1px #cccccc;
+  border-right: solid 1px #cccccc;
+}
+.bio_table thead th {
+  padding: 2px 5px 2px 5px;
+  border: 1px solid #666;
+  color: #333333;
+  font-weight: normal;
+  text-align: center;
+  cursor: pointer;
+  background-color:#ece9e4;
+}
+
+.bio_table tr.evengrey {background-color: #ebeae5;}
+.bio_table tr.oddgrey {background-color: #fefefe;}
+.bio_table tr.evengrey td.high {background-color: #d6d1ce;padding: 2px 7pt;}
+.bio_table tr.oddgrey td.high {background-color: #e4e1dd;padding: 2px 7pt;}
+
+/* row having a bottom border */
+.bio_table tr.bottom  {
+  border-bottom: 1px solid #bcbcbc;
+}
+
+/* row having a top border */
+.bio_table tr.top  {
+  border-top: 1px solid #bcbcbc;
+}
+
+/* proceedings */
+
+.proceedings_editors {
+  color: #15544E;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.proceedings_table {
+  border-collapse:collapse;
+  font: 12px Arial, Helvetica, sans-serif;
+  margin:0px;
+  padding:0px;
+  border:1px dotted #cccccc;
+  font-size:12px;
+  box-shadow: 4px 4px 12px #888888;
+}
+
+.proceedings_table td {
+  padding: 3px 4px 3px 8px;
+}
+
+.proceedings_table thead th {
+  padding: 4px 0 4px 8px;
+  color: #333333;
+  font-weight: bold;
+  text-align : left;
+  cursor: pointer;
+  background-color: #D4F7F4;
+  text-shadow: 0px 1px 1px #fff;
+}
+
+.proceedings_table a {
+  text-decoration: underline;
+  color: #06544D;
+}
+
+.proceedings_table tr {
+  background-color: #ffffff;
+  border-bottom:1px dotted #cccccc;
+}
+.proceedings_table tr.odd {
+  background-color: #F7F7F7;
+  border-bottom:1px dotted #cccccc;
+}
+.proceedings_table tr.hed {
+  background-color: #fff;
+  border-bottom:2px solid #cccccc;
+}
+
+/* row having a top border */
+.proceedings_table tr.top  {
+  border-top: 1px solid #aaaaaa;
+}
+
+.proceedings_menu {
+  height:24pt;
+  font-size:12pt;
+  background: #eeeeee;
+  width:100%;
+  margin: 0pt 0pt 15pt 0pt;
+  padding: 0pt 0pt 0pt 20pt;
+  border:0pt;
+  border-bottom: 1px solid #aaaaaa;
+  border-top: 1px solid #aaaaaa;
+}
+
+.proceedings_menu a {
+  line-height:24pt;
+  margin : 0pt 16pt 0pt 0pt;
+  color: #15544E;
+}
+
+hr.paper_abstract {
+  width: 50%;
+  color: #dddddd;
+  text-align: left;
+  margin-top: 7pt;
+}
+
+.proceedings_preface {
+  background: #fff;
+  padding:12px;
+  margin: 20px 0px 0px 0px;
+  -webkit-border-radius: 6px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+  -moz-border-radius: 6px; /* FF1-3.6 */
+  border-radius: 6px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  border:1px solid #8d9c9b;
+  opacity:.7; /*50%*/
+  filter:alpha(opacity=70);
+  zoom:normal; /*iefix*/
+}
+
+.proceedings_index_table {
+  border-collapse:collapse;
+  font: 12px Arial, Helvetica, sans-serif;
+  margin:0px;
+  padding:0px;
+  border:1px dotted #cccccc;
+  font-size:12px;
+  box-shadow: 4px 4px 12px #888888;
+}
+
+.proceedings_index_table td {
+  padding: 3px 4px 3px 8px;
+}
+
+.proceedings_index_table thead th {
+  padding: 4px 0 4px 8px;
+  color: #333333;
+  font-weight: bold;
+  text-align : left;
+  cursor: pointer;
+  background: #D4F7F4 url("epic-theader-bg.jpg") repeat-x;
+  text-shadow: 0px 1px 1px #fff;
+}
+
+.proceedings_index_table a {
+  text-decoration: underline;
+  color: #06544D;
+}
+
+.proceedings_index_table tr.even {
+  background-color: #ffffff;
+  border-bottom:1px dotted #cccccc;
+}
+.proceedings_index_table tr.odd {
+  background-color: #F7F7F7;
+  border-bottom:1px dotted #cccccc;
+}
+.proceedings_index_table tr.head {
+  background-color: #fff;
+  border-bottom:2px solid #cccccc;
+}
+.proceedings_index_table tr.top  {
+  border-top: 1px solid #aaaaaa;
+}
+.session_desc {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 0pt 0pt 3pt 0pt;
+  padding: 3pt 3pt 3pt 5pt;
+  background: #fffff6;
+  border-radius: 0px 0px 6px 6px;
+  color: #666;
+}
+.session_desc p:first-child {margin-top:0pt}
+.session_desc p:last-child {margin-bottom:0pt}
+
+img.paperlink {
+   vertical-align: middle;
+   padding-left: 5px;
+}

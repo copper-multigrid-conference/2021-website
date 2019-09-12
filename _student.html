@@ -1,0 +1,101 @@
+{% extends "_layout.html" %}
+{% block title %}Student Paper Competition{% endblock %}
+{% block content %}
+
+  <div class="container">
+      <h4>Student Paper Competition</h4>
+      <p>
+      Any student or new Ph.D. whose degree was awarded after Jan 1, {{info.year-1}}
+      is invited to submit a paper to the Student Paper Competition.
+      Submissions should be based on work while done as a full-time student;
+      results after graduation are not eligible.  In addition, all papers
+      submitted should represent the work and writing of the student submitting
+      the paper, developed in collaboration with any named
+      advisors/collaborators.  Proofreading and editing by senior contributors
+      is allowed, but contributions must be written primarily by the student
+      author.
+
+      Student papers must be formatted according to the template provided (below), with no
+      changes in margins, font sizes, etc.  Contributions may be at most 10 pages
+      long, including all figures and references.  Papers submitted that do not
+      follow these requirements will not be considered for the competition.
+      </p>
+
+      <p>
+      The template and format for the student paper competition are listed at
+      <a href="https://github.com/copper-multigrd-conference/student-paper">https://github.com/copper-multigrd-conference/student-paper</a>.
+      The template uses the SIAM article class; specific steps to format the
+      submission can befound in the README.
+      </p>
+
+      <p> Lodging and conference expenses may be awarded, subject to
+      funding.  Student paper winners will have priority.  Students seeking
+      support should email the conference coordinator, Annette Anthony
+      (annetteFanthony@gmail.com) for more information.  </p>
+
+      <h4>How To Participate</h4>
+
+      <p>
+        Student paper submission involves two steps with different deadlines.
+      </p>
+
+      <ol>
+      <li> First, you must submit an abstract for the student paper by <b>{{deadlines.studentabs.date}}</b>.
+        <!--
+        <div class="alert alert-warning" role="alert">
+        Submission information coming soon.
+        </div>
+        -->
+        Please login to <a href="{{info.submissionlink}}">EasyChair</a> (or create an account if you do not have one), and go to submissions for CM{{info.year}}:
+      <br>
+      <div class="text-xs-center">
+        <a role="button" class="btn btn-primary btn-lg" href="{{info.submissionlink}}">Submit an abstract</a>
+      </div>
+      Make sure you click on the Student Paper Competition track.<br>
+      </li>
+
+      <li>Second, you will submit (in pdf) the paper by <b>{{deadlines.studentpaper.date}}</b>.
+        <!--
+        <div class="alert alert-warning" role="alert">
+        Submission information coming soon.
+        </div>
+        -->
+      Please visit again <a href="{{info.submissionlink}}">EasyChair</a>, and locate your abstract submission. In the upper right corner select "Add a file". This will lead you to a prompt to upload your paper. The paper must be in <b> pdf </b> form. <br>
+     Note: paper submissions will not be allowed without an abstract submission by the first deadline.
+      <div class="text-xs-center">
+        <a role="button" class="btn btn-primary btn-lg" href="{{info.submissionlink}}">Submit a paper (pdf)</a>
+      </div>
+      </li>
+      </ol>
+
+      <h4>Previous Student Paper Competition Winners</h4>
+
+    <table class="table table-md">
+      <tbody>
+      {% set counter = 0 %}
+      {% for c in student_paper_winners %}
+        {% if counter % 3 == 0 %}
+        <tr>
+        {% endif %}
+          <td>
+            <b>{{c.year}}</b><br/>
+          {% for name in c.names %}
+          {{ name }}<br/>
+          {% endfor %}
+          </td>
+        {% set counter = counter + 1 %}
+        {% if counter % 3 == 0 %}
+        </tr>
+        {% endif %}
+      {% endfor %}
+      {% set extra = student_paper_winners|length % 3 - 1 %}
+      {% for c in range(1, extra+1) %}
+        <td></td>
+        {% if c == extra %}
+        </tr>
+        {% endif %}
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

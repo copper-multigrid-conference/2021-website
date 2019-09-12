@@ -1,0 +1,29 @@
+{% extends "_layout.html" %}
+{% block title %}People{% endblock %}
+{% block content %}
+
+{%macro maketable(committee, role) -%}
+  <table class="table table-sm">
+    <tbody>
+      {% for c in committee %}
+      {% if role.lower() in c.role.lower() %}
+          <tr>
+            <td style="width: 200px"><a href="{{c.url}}">{{c.name}}</a></td>
+            <td style="width: 300px">{{c.email}}</td>
+            <td>{{c.affil}}</td>
+          </tr>
+      {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+{%- endmacro %}
+
+    <div class="container">
+      <h4 id="chair">Conference Chairs</h4>
+      {{ maketable(committee, 'Conference Chair') }}
+      <h4 id="committee">Program Committee</h4>
+      {{ maketable(committee, 'Program Committee') }}
+      <h4>SIAM Representative</h4>
+      {{ maketable(committee, 'SIAM') }}
+    </div>
+{% endblock %}

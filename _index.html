@@ -1,0 +1,174 @@
+{% extends "_layout.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+
+<div class="container">
+    <div class="d-block mx-auto main-block">
+      <h2 class="title text-danger">{{ info.date }}</h2>
+      <h2 class="title">Copper Mountain, Colorado</h2>
+    </div >
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <div class="card">
+        <!-- from https://commons.wikimedia.org/wiki/File:Copper_Trail.jpg retrieved on 20160711 -->
+        <!-- This work has been released into the public domain by its
+          author, DebateLord at English Wikipedia. This applies worldwide.
+          In some countries this may not be legally possible; if so: DebateLord grants
+          anyone the right to use this work for any purpose, without any conditions,
+          unless such conditions are required by law. -->
+        <img class="img-fluid img-rounded" src="./images/640px-Copper_Trail.jpg" alt="Copper Mountain">
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+      <div class="card copper-color">
+        <div class="card-body">
+          <h4 class="card-title">Conference Deadlines</h4>
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="far fa-calendar-alt"></i></span> <a href="{{deadlines.abstracts.url}}"        > {{deadlines.abstracts.title}}:        </a> {{deadlines.abstracts.date}}</li>
+            <li><span class="fa-li"><i class="far fa-calendar-alt"></i></span> <a href="{{deadlines.studentabs.url}}"       > {{deadlines.studentabs.title}}:       </a> {{deadlines.studentabs.date}}</li>
+            <li><span class="fa-li"><i class="far fa-calendar-alt"></i></span> <a href="{{deadlines.studentpaper.url}}"     > {{deadlines.studentpaper.title}}:     </a> {{deadlines.studentpaper.date}}</li>
+            <li><span class="fa-li"><i class="far fa-calendar-alt"></i></span> <a href="{{deadlines.earlyregistration.url}}"> {{deadlines.earlyregistration.title}}:</a> {{deadlines.earlyregistration.date}}</li>
+            <li><span class="fa-li"><i class="far fa-calendar-alt"></i></span> <a href="{{deadlines.specialissue.url}}"     > {{deadlines.specialissue.title}}:     </a> {{deadlines.specialissue.date}}</li>
+            <li><span class="fa-li"><i class="far fa-calendar-alt"></i></span> <a href="{{deadlines.lodging.url}}"          > {{deadlines.lodging.title}}:          </a> {{deadlines.lodging.date}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row row-top">
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <h6>Organized by</h6>
+      <a href="http://www.frontrangescicomp.com">Front Range Scientific Computations, Inc.</a>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <h6>Co-Organized by</h6>
+      The
+      <a href="http://www.colorado.edu/">University of Colorado</a>
+      , the
+      <a href="http://www.llnl.gov/casc">Center for Applied Scientific Computing at LLNL</a>
+      , and the
+      <a href="http://www.illinois.edu">University of Illinois at Urbana-Champaign</a>
+
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <h6>Sponsored by</h6>
+      <a href="http://www.doe.gov">DOE</a>,
+      <!-- <a href="http://www.ibm.com">IBM</a>, -->
+      <a href="http://www.llnl.gov/casc">LLNL</a>,
+      <a href="http://www.lanl.gov">LANL</a>,
+      <a href="http://www.sandia.gov">Sandia</a>
+      <!-- <a href="http://www.nsf.gov">NSF</a>, -->
+      <!-- <a href="http://www.anl.gov">Argonne</a> -->
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <h6>In cooperation with</h6>
+      <a href="http://www.siam.org/">SIAM</a>
+      <br/>
+      <i>contact: <a href="people.html">Luke Olson</a></i>
+      <br/>
+      <img class="img-responsive center-block" src="./images/blue_non-co-branded.png" alt="SIAM" width="120">
+    </div>
+  </div>
+
+  <div class="row row-top">
+    <div class="col-xs-12 col-sm-4 col-md-4">
+      <div class="card copper-color">
+        <div class="card-block">
+          <h4 class="card-title">Conference Information</h4>
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-users"></i><a href="people.html#chair">Conference Chairs</a>
+            <li><i class="fa-li fa fa-users"></i><a href="people.html#committee">Conference Program Committee</a>
+            <li><i class="fa-li fa fa-users"></i><a href="about.html#topics">Conference Highlights</a></li>
+          </ul>
+          <br/>
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-history"></i><a href="http://grandmaster.colorado.edu/copper/">Conference History</a>
+          </ul>
+          <br/>
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-graduation-cap"></i><a href="student.html#details">Student Registration Support</a>
+            <li><i class="fa-li fa fa-file-text"></i><a href="student.html#details">Student Paper Competition</a>
+            <li><i class="fa-li fa fa-trophy"></i><a href="student.html#past">Student Paper Competition List of Previous Winners</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4">
+      <div class="card copper-color">
+        <div class="card-block">
+          <h4 class="card-title">Previous Conference Information</h4>
+          <ul class="small list-unstyled">
+            {% for c in previous_conferences %}
+              {% if  c.year > 2013 %}
+              <li>
+                {% if c.url %}
+                  <a href="{{c.url}}">
+                  {% endif %}
+                  <b>{{c.year}}</b> - {{c.title}}
+                  {% if c.url %}
+                    </a>
+                  {% endif %}
+                  {% if c.journal %}
+                    <ul class="fa-ul">
+                      <li><i class="fa fa-book"></i> <a href="{{c['journal-url']}}"> {{c['journal-abbv']}} Special Issue </a> </li>
+                    </ul>
+                  {% endif %}
+              </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+          <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            ((more))
+          </a>
+          <div class="collapse" id="collapseExample">
+            <div>
+          <ul class="small list-unstyled">
+            {% for c in previous_conferences %}
+              {% if  c.year < 2014 %}
+              <li>
+                {% if c.url %}
+                  <a href="{{c.url}}">
+                  {% endif %}
+                  <b>{{c.year}}</b> - {{c.title}}
+                  {% if c.url %}
+                    </a>
+                  {% endif %}
+                  {% if c.journal %}
+                    <ul class="fa-ul">
+                      <li><i class="fa fa-book"></i> <a href="{{c['journal-url']}}"> {{c['journal-abbv']}} Special Issue </a> </li>
+                    </ul>
+                  {% endif %}
+              </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4">
+      <div class="card copper-color">
+        <div class="card-block">
+          <h4 class="card-title">Copper Mountain Information</h4>
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-snowflake"></i><a href="https://store.coppercolorado.com/eStore/Content/Commerce/Products/DisplayProducts.aspx?ProductGroupCode=4&ProductCategoryCode=371"> rental, lesson, & tubing  information</a></li>
+          </ul>
+          Travel information:
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-bus"></i><a href="about.html#location">Shuttle information</a></li>
+          </ul>
+          Copper Mtn adventures and activities :
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-snowflake"></i><a href="http://www.coppercolorado.com/things-to-do/activities-amenities/rei">REI Classes</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

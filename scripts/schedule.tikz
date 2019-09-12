@@ -1,0 +1,87 @@
+\begin{tikzpicture}
+%\def\mult{4}
+%\def\n{8}
+%\draw[step=\mult/\n] (0,0) grid (\mult,\mult);
+
+% general spacing
+\def\m{1.9}
+
+% general spacing
+\def\r{0.3}
+
+% draw the days
+%\node[anchor=south] (times)     at (-1.5*\m,0) {};
+\node[anchor=south] (sunday)    at (0,0) {Sunday};
+\node[anchor=south] (monday)    at (1*\m,0) {Monday};
+\node[anchor=south] (tuesday)   at (2*\m,0) {Tuesday};
+\node[anchor=south] (wednesday) at (3*\m,0) {Wednesday};
+\node[anchor=south] (thursday)  at (4*\m,0) {Thursday};
+
+% draw the times
+\newcount\ti
+\ti=1 %
+\foreach \t in {8am,9,10,11,12pm,1,2,3,4,5,6pm,7,8,9}
+{
+  \node[right] (\t) at (-1.0*\m, -\r*\ti) {\t};
+  \global\advance\ti by1
+}
+
+\draw[color=black!20] ( 0.5*\m, 0) -- ( 0.5*\m, -14*\r);
+\draw[color=black!20] ( 1.5*\m, 0) -- ( 1.5*\m, -14*\r);
+\draw[color=black!20] ( 2.5*\m, 0) -- ( 2.5*\m, -14*\r);
+\draw[color=black!20] ( 3.5*\m, 0) -- ( 3.5*\m, -14*\r);
+
+\newcommand{\session}[7][]{
+\ifthenelse{\isempty{#7}}
+  {\coordinate (A) at ($(#2)+(-0.40*\m,-#3*\r+7*\r-0.5*\r)$);
+   \coordinate (B) at ($(#2)+( 0.40*\m,-#4*\r+7*\r-0.5*\r)$);}{}
+\ifthenelse{\equal{#7}{A}}
+  {\coordinate (A) at ($(#2)+(-0.40*\m,-#3*\r+7*\r-0.5*\r)$);
+   \coordinate (B) at ($(#2)+(-0.05*\m,-#4*\r+7*\r-0.5*\r)$);}{}
+\ifthenelse{\equal{#7}{B}}
+  {\coordinate (A) at ($(#2)+( 0.05*\m,-#3*\r+7*\r-0.5*\r)$);
+   \coordinate (B) at ($(#2)+( 0.40*\m,-#4*\r+7*\r-0.5*\r)$);}{}
+\filldraw[line width=0.05mm,color=#1!60,  fill=#1!5]
+(A)
+rectangle
+(B)
+node[text=black,midway,#6]{#5};
+}
+
+%\session[green]{monday}{13}{16}{test}{}{}
+%\session[green]{monday}{19}{21}{test}{}{A}
+%\session[green]{monday}{19}{21}{test}{}{B}
+
+% Sunday
+\session[red]{sunday}{10}{18}{Tutorials}{rotate=90}{}
+\session[blue]{sunday}{19}{21}{Reception}{}{}
+\session[blue]{wednesday}{19}{21}{Banquet}{}{}
+
+% Monday
+\session[black]{monday}{8}{10}{}{}{A}
+\session[black]{monday}{8}{10}{}{}{B}
+\session[black]{monday}{10.5}{12.5}{}{}{A}
+\session[black]{monday}{10.5}{12.5}{}{}{B}
+\session[black]{monday}{16.5}{18.5}{}{}{A}
+\session[black]{monday}{16.5}{18.5}{}{}{B}
+
+% Tuesday
+\session[black]{tuesday}{8}{10}{}{}{A}
+\session[black]{tuesday}{8}{10}{}{}{B}
+\session[black]{tuesday}{10.5}{12.5}{}{}{A}
+\session[black]{tuesday}{10.5}{12.5}{}{}{B}
+\session[black]{tuesday}{16.5}{18.5}{}{}{A}
+\session[black]{tuesday}{16.5}{18.5}{}{}{B}
+
+% Wednesday
+\session[black]{wednesday}{8}{10}{}{}{A}
+\session[black]{wednesday}{8}{10}{}{}{B}
+\session[black]{wednesday}{10.5}{12.5}{}{}{A}
+\session[black]{wednesday}{10.5}{12.5}{}{}{B}
+\session[black]{wednesday}{16.5}{18.5}{}{}{}
+
+% Thursday
+\session[black]{thursday}{8}{10}{}{}{}
+\session[black]{thursday}{10.5}{12.5}{}{}{}
+
+\end{tikzpicture}

@@ -1,0 +1,38 @@
+{% extends "_layout.html" %}
+{% block title %}Submit{% endblock %}
+{% block content %}
+
+  <div class="container">
+      <h4>Presentation Format</h4>
+
+      <p>
+      Presentations at the conference are featured in morning and afternoon
+      session and are normally 25 minutes in length, including time for questions.  Presentations
+      are grouped generally by theme.
+      </p>
+
+      <h4>How To Participate</h4>
+
+      <p>
+      To submit an abstract for a presentation, please use the following:
+
+      <br>
+        <!--
+        <div class="alert alert-warning" role="alert">
+        Submission information coming soon.
+        </div>
+        -->
+        <div class="text-xs-center">
+          <a role="button" class="btn btn-primary btn-lg" href="{{info.submissionlink}}">Submit an abstract</a>
+        </div>
+
+      <br>
+      At the top of the submission page you can read the submission instructions.
+      There are two options for submission:
+      <ol>
+        <li>An abstract for participation in the regular program (deadline {{deadlines.abstracts.date}}).</li>
+        <li>An abstract and paper for the the Student paper competition.  See <a href="student.html">instructions and deadlines </a> for further details.  Each submission to the student paper competition will be considered for the regular program -- a separate submission is not needed.</li>
+      </ol>
+      </p>
+  </div>
+{% endblock %}
