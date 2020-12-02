@@ -40,22 +40,10 @@
   affil: Louisiana State University, U.S.A.
   role: Program Committee
 
-- name: Marian Brezina
-  email: marian.brezina@gmail.com
-  url: http://grandmaster.colorado.edu/~mbrezina
-  affil: DigitalGlobe, U.S.A.
-  role: Program Committee
-
 - name: Hans De Sterck
   email: hdesterck@uwaterloo.ca
   url: http://www.hansdesterck.net/
   affil: University of Waterloo
-  role: Program Committee
-
-- name: Craig Douglas
-  email: craig.c.douglas@gmail.com
-  url: http://www.mgnet.org/~douglas/
-  affil: University of Wyoming, U.S.A.
   role: Program Committee
 
 - name: Van Emden Henson
@@ -80,7 +68,7 @@
   email: smaclachlan@mun.ca
   url: http://www.mun.ca/math/people/ppl-faculty/scottm.php
   affil: Memorial University of Newfoundland, Canada
-  role: Program Committee
+  role: Conference Chair
 
 - name: David Moulton
   email: moulton@lanl.gov
