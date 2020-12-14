@@ -23,7 +23,6 @@ files = [\
 '_about.html',
 '_index.html',
 '_layout.html',
-'_lodging.html',
 '_people.html',
 '_registration.html',
 '_student.html',
@@ -38,13 +37,13 @@ def prune_blank(somelist, key):
 
 # Load Data
 with io.open("./data/info.yml", "r") as inf:
-    info = yaml.load(inf)
+    info = yaml.load(inf, Loader=yaml.FullLoader)
 
 with io.open("./data/student-paper-winners.yml", "r") as inf:
-    student_paper_winners = yaml.load(inf)
+    student_paper_winners = yaml.load(inf, Loader=yaml.FullLoader)
 
 with io.open("./data/previous-conferences.yml", "r") as inf:
-    previous_conferences = yaml.load(inf)
+    previous_conferences = yaml.load(inf, Loader=yaml.FullLoader)
     previous_conferences = prune_blank(previous_conferences, 'year')
     # now order by years
     previous_conferences = sorted(previous_conferences,
@@ -52,13 +51,13 @@ with io.open("./data/previous-conferences.yml", "r") as inf:
                                   reverse=True)
 
 with io.open("./data/committee.yml", "r",encoding="utf-8") as inf:
-    committee = yaml.load(inf)
+    committee = yaml.load(inf, Loader=yaml.FullLoader)
     committee = prune_blank(committee, 'name')
     # order by last part of last name
     committee = sorted(committee, key=lambda k: k['name'].split()[-1])
 
 with io.open("./data/deadlines.yml", "r") as inf:
-    deadlines = yaml.load(inf)
+    deadlines = yaml.load(inf, Loader=yaml.FullLoader)
 
 # now render the pages
 for f in files:

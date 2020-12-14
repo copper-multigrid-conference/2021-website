@@ -1,42 +1,36 @@
 abstracts:
   title: Presentation Abstracts
-  date: TBD
+  date: Monday, February 22, 2021
   url: submit.html
 
 studentpaper:
   title: Student Competition Paper
-  date: TBD
+  date: Friday, January 22, 2021
   url: student.html
 
 studentabs:
   title: Student Competition Abstract
-  date: TBD
+  date: Friday, January 15, 2021
   url: student.html
-
-earlyregistration:
-  title: Early Registration
-  date: TBD
-  url: registration.html
 
 registration:
   title: Registration
   date: TBD
   url: registration.html
 
-lodging:
-  title: Lodging
+earlyregistration:
+  title: Registration
   date: TBD
-  url: lodging.html
+  url: registration.html
 
 specialissue:
   title: Journal Special Issue
-  date: TBD
+  date: (tentatively) June 15, 2021
   url: about.html#specialissue
 
 specialissueopen:
-  title: Journal Special Issue Open
-  date: TBD
-  url: about.html#specialissue
+  title: Journal Special Issue (open)
+  date: (tentatively) April 15, 2021
 
 cancellation:
   date: TBD
