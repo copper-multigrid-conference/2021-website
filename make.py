@@ -15,7 +15,8 @@ if os.path.exists(liveweb):
     timestamp = time.strftime('%c').replace(' ', '-').replace(':', '.')
     shutil.move(liveweb, liveweb+'-'+timestamp)
 
-os.makedirs(liveweb)
+os.umask(0o022)
+os.makedirs(liveweb,mode=0o755)
 
 # parse, render each template here
 env = Environment(loader=FileSystemLoader('./'))
@@ -83,3 +84,9 @@ for d in livedirs:
 livefiles = []
 for f in livefiles:
     shutil.copyfile(f, os.path.join(liveweb, f))
+
+# Set permissions for liveweb
+for dirpath, dirnames, filenames in os.walk(liveweb):
+    os.chmod(dirpath, 0o755)
+    for filename in filenames:
+        os.chmod(os.path.join(dirpath, filename), 0o644)
