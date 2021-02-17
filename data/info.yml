@@ -1,14 +1,14 @@
-# submissionlink: https://easychair.org/conferences/?conf=cm2019
+submissionlink: https://easychair.org/my/conference?conf=cm2021#
 # programlink: https://easychair.org/smart-program/CM2019/
-# registrationlink: https://events.eventzilla.net/e/-19th-copper-mountain-conference-on-multigrid-methods-2138729273
+registrationlink: https://events.eventzilla.net/e/20th-copper-mountain-conference-on-multigrid-methods-2138814883
 # lodginglink: https://inntopia.travel/ecomm/package/package/912471/en-US/?packageid=47091&promocode=3291
 
 year: 2021
 date: Monday March 29 - Friday April 2, 2021
 registration:
-  siam: TBD
-  nonsiam: TBD
-  student: TBD
-  siam_early: TBD
-  nonsiam_early: TBD
-  student_early: TBD
+  siam: $150
+  nonsiam: $150
+  student: $75
+  siam_early: $95
+  nonsiam_early: $110
+  student_early: $50
