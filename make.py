@@ -19,7 +19,8 @@ os.umask(0o022)
 os.makedirs(liveweb,mode=0o755)
 
 # parse, render each template here
-env = Environment(loader=FileSystemLoader('./'))
+env = Environment(loader=FileSystemLoader('./'),
+                  trim_blocks=True, lstrip_blocks=True)
 files = [\
 '_about.html',
 '_index.html',
@@ -27,6 +28,7 @@ files = [\
 '_people.html',
 '_registration.html',
 '_student.html',
+'_timezone.html',
 '_submit.html']
 
 

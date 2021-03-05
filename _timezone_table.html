@@ -1,0 +1,21 @@
+<select class="custom-select" id="selecttz" onchange="createtable(this.value)"></select>
+{% set tzlist = [('America/Los_Angeles', 'Los Angeles (Pacific)'),
+                 ('America/Denver',   'Denver'),
+                 ('America/Chicago',  'Chicago'),
+                 ('America/New_York', 'New York'),
+                 ('America/St_Johns', 'St. John\'s'),
+                 ('Europe/London',    'London'),
+                 ('Europe/Berlin',    'Berlin'),
+                 ('Europe/Moscow',    'Moscow'),
+                 ('Israel',           'Israel'),
+                 ('Asia/Shanghai',    'Shanghai'),
+                 ('Asia/Tokyo',       'Tokyo'),
+                ] %}
+{% for tz in tzlist %}
+  <button type="button" class="btn btn-outline-secondary btn-xs" onclick="createtable('{{tz[0]}}')">{{tz[1]}}</button>
+{% endfor %}
+<div class="clearfix"></div>
+<span id="scheduletitle" class="font-weight-bold text-danger"></span>
+<div class="clearfix"></div>
+<span id="scheduletitletime" class="font-weight-bold text-danger"></span>
+<table class="table table-sm" id="schedule"></table>
