@@ -34,7 +34,6 @@ function createtable(newtz='America/Los_Angeles') {
     '1',
     '1',
     '1',
-    '1',
     'break',
     'break',
     '2',
@@ -47,13 +46,12 @@ function createtable(newtz='America/Los_Angeles') {
       'table-primary',
       'table-primary',
       'table-primary',
-      'table-primary',
+      'table-warning',
       'table-warning',
       'table-success',
       'table-success',
       'table-success',
       'table-success',
-      'table-warning',
       'table-warning',
   ];
   let dates=['2021-03-29',
@@ -71,14 +69,14 @@ function createtable(newtz='America/Los_Angeles') {
     '',
     '',
     '',
+    '09:00',
+    '|',
+    '|',
+    '|',
+    '|',
+    '11:00',
     '',
     '',
-    '10:00',
-    '|',
-    '|',
-    '|',
-    '|',
-    '12:00',
   ];
   let ignoreastime = ['', '|'];
   // start over
@@ -188,10 +186,10 @@ function createtable(newtz='America/Los_Angeles') {
         color = labelcolors[i];
       }
       if (tutdates.includes(d)) {
-        if (i>=5) {
+        if (i>=3) {
           color = 'table-danger';
         }
-        if (i<4) {
+        if (i<3 || i>=9) {
           color = '';
         }
       }
