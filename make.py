@@ -23,6 +23,7 @@ env = Environment(loader=FileSystemLoader('./'),
                   trim_blocks=True, lstrip_blocks=True)
 files = [\
 '_about.html',
+'_faq.html',         
 '_index.html',
 '_layout.html',
 '_people.html',
