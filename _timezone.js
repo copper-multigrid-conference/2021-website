@@ -197,7 +197,12 @@ function createtable(newtz='America/Los_Angeles') {
         if (times[i] == '09:40') {
           color = 'table-primary';
         }
-        if (times[i] == '10:20' || times[i] == '10:05') {
+        if (times[i] == '10:20') {
+          color = 'table-warning';
+        }
+      }
+      if (d == '2021-04-01') {
+        if (times[i] == '09:40') {
           color = 'table-danger';
         }
       }
